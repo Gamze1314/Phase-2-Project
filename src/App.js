@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './NavBar.js';
+// useNavigate is a function that will redirect the user to another page.
+import { Outlet } from'react-router-dom';
+import SearchBar from './components/SearchBar.js';
+
+//useEffect is a function that will run a function when the component is first rendered.=> get the data from the server.
+// pass data down with context property
+//useOutletContext hook to access the context in the child components.
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NavBar />
       </header>
+      <Outlet />
     </div>
   );
 }

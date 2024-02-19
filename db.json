@@ -1,0 +1,91 @@
+{
+  "tweets": [
+    {
+      "id": 1,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "user": "John",
+      "image": "https://example.com/image1.jpg"
+    },
+    {
+      "id": 2,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "user": "John",
+      "image": "https://example.com/image2.jpg"
+    },
+    {
+      "id": 3,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "user": "John",
+      "image": "https://example.com/image3.jpg"
+    },
+    {
+      "id": 4,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "hashtags": ["#love", "#hate"],
+      "user": "John",
+      "image": "https://example.com/image4.jpg"
+    },
+    {
+      "id": 5,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "hashtags": ["#love", "#hate"],
+      "user": "John",
+      "image": "https://example.com/image5.jpg"
+    },
+    {
+      "id": 6,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "hashtags": ["#love", "#hate"],
+      "user": "John",
+      "image": "https://example.com/image6.jpg"
+    },
+    {
+      "id": 7,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "hashtags": ["#love", "#hate"],
+      "user": "John",
+      "image": "https://example.com/image7.jpg"
+    },
+    {
+      "id": 8,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "hashtags": ["#love", "#hate"],
+      "user": "John",
+      "image": "https://example.com/image8.jpg"
+    },
+    {
+      "id": 9,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "hashtags": ["#love", "#hate"],
+      "user": "John",
+      "image": "https://example.com/image9.jpg"
+    },
+    {
+      "id": 10,
+      "text": "Hello World!",
+      "title": "Hello World!",
+      "likeCount": 10,
+      "hashtags": ["#love", "#hate"],
+      "user": "John",
+      "image": "https://example.com/image10.jpg"
+    }
+  ]
+}
