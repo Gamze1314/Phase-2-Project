@@ -5,9 +5,12 @@ export default function TweetCard() {
   return (
     <div>
       <Card
-        style={{ width: "18rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)" }}
+        style={{
+          width: "20rem",
+          boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+          margin: "10px",
+        }}
       >
-        <Card.Img variant="top" src="" />
         <Card.Body>
           <Card.Title>Gamze Kandara</Card.Title>
           <Card.Text>
