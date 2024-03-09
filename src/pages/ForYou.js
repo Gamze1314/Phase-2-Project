@@ -5,11 +5,14 @@ import SearchBar from "../components/SearchBar";
 import TweetsContainer from "../components/TweetsContainer";
 import { Outlet, useOutletContext } from "react-router-dom"
 
-
 //useOutletContext to access the context.
 
 function ForYou() {
   const [tweets, setTweets] = useOutletContext();
+
+  const addTweet = (newTweet) => {
+    setTweets((prevTweets) => [...prevTweets, newTweet]);
+  };
 
   return (
     <div>
@@ -19,7 +22,7 @@ function ForYou() {
       <Container>
         <Row>
           <Col sm={5}>
-            <TweetForm />
+            <TweetForm addTweet={addTweet} />
           </Col>
         </Row>
       </Container>

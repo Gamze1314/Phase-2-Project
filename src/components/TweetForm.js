@@ -3,8 +3,8 @@ import { Button, Form, Col } from "react-bootstrap";
 import { Container, Row } from "react-bootstrap";
 // import Alert from "react-bootstrap/Alert";
 
-export default function TweetForm() {
-  // state to hold form data.
+export default function TweetForm({ addTweet }) {
+  // state to store form data.
   const [formData, setFormData] = useState({
     text: "",
     title: "",
@@ -24,10 +24,28 @@ export default function TweetForm() {
       user: e.target.user.value,
     };
 
-    setFormData(newData);
+    // POST Request, and update => setState function.
+    fetch("http://localhost:3001/tweets", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newData),
+    })
+      .then((r) => r.json())
+      .then((newData) => {
+        setFormData(newData);
+        addTweet(newData);
+        // clear form data
+        setFormData({
+          text: "",
+          title: "",
+          likeCount: 0,
+          hashtags: "",
+          user: "",
+        });
+      });
   }
-
-  console.log(formData);
 
   return (
     <div className="d-flex justify-content-center">
