@@ -3,7 +3,7 @@ import { Button, Form, Col } from "react-bootstrap";
 import { Container, Row } from "react-bootstrap";
 // import Alert from "react-bootstrap/Alert";
 
-export default function TweetForm({ addTweet }) {
+export default function TweetForm({ addTweet , tweets}) {
   // state to store form data.
   const [formData, setFormData] = useState({
     text: "",
@@ -17,6 +17,7 @@ export default function TweetForm({ addTweet }) {
     e.preventDefault();
 
     const newData = {
+      id: tweets.length + 1,
       text: e.target.text.value,
       title: e.target.title.value,
       likeCount: 0,

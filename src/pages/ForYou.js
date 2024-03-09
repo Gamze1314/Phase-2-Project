@@ -22,7 +22,7 @@ function ForYou() {
       <Container>
         <Row>
           <Col sm={5}>
-            <TweetForm addTweet={addTweet} />
+            <TweetForm addTweet={addTweet} tweets={tweets} />
           </Col>
         </Row>
       </Container>
