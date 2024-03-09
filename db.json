@@ -79,6 +79,14 @@
       "likeCount": 10,
       "hashtags": "#economy",
       "user": "Colleen M."
+    },
+    {
+      "id": 13,
+      "text": "Testing React App",
+      "title": "Test",
+      "likeCount": 0,
+      "hashtags": "#react",
+      "user": "Gamze K."
     }
   ]
 }
