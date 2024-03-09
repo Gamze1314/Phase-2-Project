@@ -3,8 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import TweetForm from "../components/TweetForm";
 import SearchBar from "../components/SearchBar";
 import TweetsContainer from "../components/TweetsContainer";
+import { Outlet, useOutletContext } from "react-router-dom"
+
+
+//useOutletContext to access the context.
 
 function ForYou() {
+  const [tweets, setTweets] = useOutletContext();
+
   return (
     <div>
       <div className="search-bar">
@@ -18,7 +24,7 @@ function ForYou() {
         </Row>
       </Container>
       <div style={{ marginTop: "120px" }}>
-        <TweetsContainer />
+        <TweetsContainer tweets={tweets} />
       </div>
     </div>
   );

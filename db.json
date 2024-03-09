@@ -5,80 +5,80 @@
       "text": "This is the first JavaScript question I got wrong!!  var x = 3; , var y = x++; y+1;",
       "title": "JavaScript",
       "likeCount": 5,
-      "hashtags": ["#JS", "#coding"],
-      "user": "John A.",
+      "hashtags": "#JS",
+      "user": "John A."
     },
     {
       "id": 2,
       "text": "30 days Challange : No junk food, read/learn everyday, cold showers.....",
-      "title": "wisdom",
+      "title": "Wisdom",
       "likeCount": 30,
-      "hashtags": ["#love", "#hate"],
-      "user": "Jennifer K.",
+      "hashtags": "#challange",
+      "user": "Jennifer K."
     },
     {
       "id": 3,
       "text": "When #Bitcoin’s market price was low, they wrote literally thousands of articles about our supposed losses.",
       "title": "BitCoin",
       "likeCount": 15,
-      "hashtags": ["#bitcoin", "#finance"],
-      "user": "Susan M.",
+      "hashtags": "#bitcoin",
+      "user": "Susan M."
     },
     {
       "id": 4,
       "text": "According to a 1985 paper, everything takes 2.71 times as long as you think it will.",
       "title": "World of Statistics",
       "likeCount": 17,
-      "hashtags": ["#statistics", "stats"],
-      "user": "Frank F.",
+      "hashtags": "#statistics",
+      "user": "Frank F."
     },
     {
       "id": 5,
       "text": "We're leading the world back to the Moon.",
       "title": "Nasa",
       "likeCount": 19,
-      "hashtags": ["#nasa", "#science"],
-      "user": "Maria A.",
+      "hashtags": "#space",
+      "user": "Maria A."
     },
     {
       "id": 6,
       "text": "Only 35% of the speaking roles in 2023 films were held by women. ",
       "title": "Films",
       "likeCount": 15,
-      "hashtags": ["#film", "#women"],
-      "user": "Unknown",
+      "hashtags": "#film",
+      "user": "Unknown"
     },
     {
       "id": 7,
       "text": "Happy  holidaysss to you all!",
-      "title": "Holiday",
+      "title": "Thanksgiving",
       "likeCount": 30,
-      "hashtags": ["#holiday", "#happy"],
-      "user": "Toni Z.",
+      "hashtags": "#holiday",
+      "user": "Toni Z."
     },
     {
       "id": 8,
       "text": "New York is the only city in the world that has the largest population.",
       "title": "New York City",
       "likeCount": 15,
-      "hashtags": ["#newyork", "#population"],
-      "user": "Mary L.",
+      "hashtags": "#newyork",
+      "user": "Mary L."
     },
     {
       "id": 9,
       "text": "React is a JavaScript framework for building user interfaces.",
       "title": "React",
       "likeCount": 15,
-      "hashtags": ["#react", "#framework"],
-      "user": "Kevin S.",
+      "hashtags": "#react",
+      "user": "Kevin S."
     },
     {
       "id": 10,
       "text": "How much economic growth is the US equity market now pricing in?",
       "title": "Economy",
       "likeCount": 10,
-      "hashtags": ["#economy", "#equity"],
-      "user": "Colleen M.",
+      "hashtags": "#economy",
+      "user": "Colleen M."
     }
   ]
 }
