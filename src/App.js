@@ -18,7 +18,6 @@ function App() {
       .then((data) => setTweets(data));
   }, [])
 
-console.log(tweets)
 // use context prop to pass down data to ForYou.
 
   return (

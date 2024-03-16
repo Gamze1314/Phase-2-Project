@@ -2,7 +2,7 @@ import React from "react";
 import TweetCard from "./TweetCard";
 // Render Tweet cards here.
 
-function TweetsContainer({ tweets }) {
+function TweetsContainer({ tweets , users , search }) {
   const [tweet] = tweets
 
 const cards = tweets.map((tweet) => {
@@ -13,7 +13,7 @@ const cards = tweets.map((tweet) => {
   text={tweet.text} 
   likeCount={tweet.likeCount} 
   user={tweet.user}
-  hashtags={tweet.hashtags} 
+  hashtags={tweet.hashtags}
   />
 })
 
@@ -23,9 +23,15 @@ const cards = tweets.map((tweet) => {
     flexWrap: "wrap", // Allows cards to wrap to the next line if the container is not wide enough
   };
 
+   const lis = users.map((user) => <li key={user}>{user}</li>);
+
   return (
     <div style={containerStyle}>
-      {cards}
+      {search === "Users" ?
+      <div>
+        <ul>{lis}</ul>
+      </div>
+      : cards}
     </div>
   );
 }
