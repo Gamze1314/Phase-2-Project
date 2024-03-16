@@ -14,7 +14,7 @@ function ForYou() {
     setTweets((prevTweets) => [...prevTweets, newTweet]);
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     if (search === "All") {
       fetchTweets(); // Fetch tweets only when search is "All"
     }
@@ -50,17 +50,24 @@ function ForYou() {
   return (
     <div>
       <div className="search-bar">
-        <SearchBar onSearchChange={handleSearchChange} search={search} />
+        <SearchBar 
+        onSearchChange={handleSearchChange} 
+        search={search} />
       </div>
       <Container>
         <Row>
           <Col sm={5}>
-            <TweetForm addTweet={addTweet} tweets={tweets} />
+            <TweetForm 
+            addTweet={addTweet} 
+            tweets={tweets} />
           </Col>
         </Row>
       </Container>
       <div style={{ marginTop: "120px" }}>
-        <TweetsContainer tweets={tweets} users={users} search={search} />
+        <TweetsContainer 
+        tweets={tweets} 
+        users={users} 
+        search={search} />
       </div>
     </div>
   );

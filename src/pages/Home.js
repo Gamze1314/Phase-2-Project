@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-
-// card img size 287 x 180
-
 function Home() {
   return (
     <div className="py-5 text-center">
@@ -20,6 +17,3 @@ function Home() {
 }
 
 export default Home;
-
-// img {require('.path/to/image.jpg').default} height :  width:
-// or import img from '..path/to/image.jpg'

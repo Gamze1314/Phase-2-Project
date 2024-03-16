@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import { Card, ListGroup, Button } from "react-bootstrap";
 
-
-export default function TweetCard({ id, title, text, likeCount, user, hashtags }) {
+export default function TweetCard({
+  id,
+  title,
+  text,
+  likeCount,
+  user,
+  hashtags,
+}) {
   const [likes, setLikes] = useState(likeCount);
-
 
   function handleLikeClick() {
     // Increment the like count
     const updatedLikes = likes + 1;
     setLikes(updatedLikes);
-// route is not set up to update backend.
+    // route is not set up to update backend.
   }
 
   return (

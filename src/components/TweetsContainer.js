@@ -2,21 +2,21 @@ import React from "react";
 import TweetCard from "./TweetCard";
 // Render Tweet cards here.
 
-function TweetsContainer({ tweets , users , search }) {
-  const [tweet] = tweets
+function TweetsContainer({ tweets, users, search }) {
 
-const cards = tweets.map((tweet) => {
-  return <TweetCard 
-  
-  key={tweet.id}
-  id={tweet.id}
-  title={tweet.title} 
-  text={tweet.text} 
-  likeCount={tweet.likeCount} 
-  user={tweet.user}
-  hashtags={tweet.hashtags}
-  />
-})
+  const cards = tweets.map((tweet) => {
+    return (
+      <TweetCard
+        key={tweet.id}
+        id={tweet.id}
+        title={tweet.title}
+        text={tweet.text}
+        likeCount={tweet.likeCount}
+        user={tweet.user}
+        hashtags={tweet.hashtags}
+      />
+    );
+  });
 
   const containerStyle = {
     display: "flex",
@@ -24,15 +24,17 @@ const cards = tweets.map((tweet) => {
     flexWrap: "wrap", // Allows cards to wrap to the next line if the container is not wide enough
   };
 
-   const lis = users.map((user) => <li key={user}>{user}</li>);
+  const lis = users.map((user) => <li key={user}>{user}</li>);
 
   return (
     <div style={containerStyle}>
-      {search === "Users" ?
-      <div>
-        <ul>{lis}</ul>
-      </div>
-      : cards}
+      {search === "Users" ? (
+        <div>
+          <ul>{lis}</ul>
+        </div>
+      ) : (
+        cards
+      )}
     </div>
   );
 }
