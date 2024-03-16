@@ -19,8 +19,11 @@ This is a Twitter clone web application built using React.js. It allows users to
 
 *To start the development server : 
 - npm start
+
 Open your web browser and navigate to http://localhost:3000 to view the React application on your network.
+
 *To run json server : 
+
 - json-server --watch db.json --port 3001
 
 *Contriuting
