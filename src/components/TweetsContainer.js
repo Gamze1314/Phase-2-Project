@@ -8,7 +8,8 @@ function TweetsContainer({ tweets , users , search }) {
 const cards = tweets.map((tweet) => {
   return <TweetCard 
   
-  key={tweet.id} 
+  key={tweet.id}
+  id={tweet.id}
   title={tweet.title} 
   text={tweet.text} 
   likeCount={tweet.likeCount} 

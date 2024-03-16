@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, ListGroup, Button } from "react-bootstrap";
 
-export default function TweetCard({ title , text , likeCount, user, hashtags }) {
+
+export default function TweetCard({ id, title, text, likeCount, user, hashtags }) {
+  const [likes, setLikes] = useState(likeCount);
+
+
+  function handleLikeClick() {
+    // Increment the like count
+    const updatedLikes = likes + 1;
+    setLikes(updatedLikes);
+// route is not set up to update backend.
+  }
+
   return (
     <div>
       <Card
@@ -13,16 +24,20 @@ export default function TweetCard({ title , text , likeCount, user, hashtags }) 
       >
         <Card.Body>
           <Card.Title>Title : {title}</Card.Title>
-          <Card.Text>{user} : {text}</Card.Text>
+          <Card.Text>
+            {user} : {text}
+          </Card.Text>
         </Card.Body>
         <ListGroup className="list-group-flush">
           {/* <ListGroup.Item>02/26/2024</ListGroup.Item> */}
-          <ListGroup.Item>Like 💝 : {likeCount}</ListGroup.Item>
+          <ListGroup.Item>Like 💝 : {likes}</ListGroup.Item>
           <ListGroup.Item>#Hastags : {hashtags}</ListGroup.Item>
         </ListGroup>
         <Card.Body>
           <Button variant="primary">💬</Button>
-          <Button variant="outline-primary">❤️️</Button>
+          <Button variant="outline-primary" onClick={handleLikeClick}>
+            ❤️️
+          </Button>
         </Card.Body>
       </Card>
     </div>
