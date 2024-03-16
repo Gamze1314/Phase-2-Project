@@ -1,7 +1,6 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 
-
 function NavBar() {
   return (
     <Nav defaultActiveKey="/" className="justify-content-center">
@@ -19,4 +18,3 @@ function NavBar() {
 }
 
 export default NavBar;
-//💬 For You

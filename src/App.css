@@ -1,10 +1,6 @@
 .App {
-  /* text-align: center; */
   font-family: HelveticaNeue-Light;
-  margin: 0% 5% 0% 5%;
-  /* text-align: center; */
 }
-
 
 .red-font {
   color: red;
@@ -44,18 +40,4 @@
   flex-direction: column;
 }
 
-
-/* .card {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: cornflowerblue;
-}
-
-.card h3, .card h4 {
-    margin-bottom: 1em;
-} */
 
