@@ -16,7 +16,6 @@ function App() {
   }, []);
 
   // use context prop to pass down data to ForYou.
-
   return (
     <div className="App">
       <header className="App-header">

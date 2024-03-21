@@ -1,7 +1,7 @@
 {
   "tweets": [
     {
-      "id": 1,
+      "id": "1",
       "text": "This is the first JavaScript question I got wrong!!  var x = 3; , var y = x++; y+1;",
       "title": "JavaScript",
       "likeCount": 5,
@@ -9,7 +9,7 @@
       "user": "John A."
     },
     {
-      "id": 2,
+      "id": "2",
       "text": "30 days Challange : No junk food, read/learn everyday, cold showers.....",
       "title": "Wisdom",
       "likeCount": 30,
@@ -17,7 +17,7 @@
       "user": "Jennifer K."
     },
     {
-      "id": 3,
+      "id": "3",
       "text": "When #Bitcoin’s market price was low, they wrote literally thousands of articles about our supposed losses.",
       "title": "BitCoin",
       "likeCount": 15,
@@ -25,7 +25,7 @@
       "user": "Susan M."
     },
     {
-      "id": 4,
+      "id": "4",
       "text": "According to a 1985 paper, everything takes 2.71 times as long as you think it will.",
       "title": "World of Statistics",
       "likeCount": 17,
@@ -33,7 +33,7 @@
       "user": "Frank F."
     },
     {
-      "id": 5,
+      "id": "5",
       "text": "We're leading the world back to the Moon.",
       "title": "Nasa",
       "likeCount": 19,
@@ -41,7 +41,7 @@
       "user": "Maria A."
     },
     {
-      "id": 6,
+      "id": "6",
       "text": "Only 35% of the speaking roles in 2023 films were held by women. ",
       "title": "Films",
       "likeCount": 15,
@@ -49,7 +49,7 @@
       "user": "Unknown"
     },
     {
-      "id": 7,
+      "id": "7",
       "text": "Happy  holidaysss to you all!",
       "title": "Thanksgiving",
       "likeCount": 30,
@@ -57,7 +57,7 @@
       "user": "Toni Z."
     },
     {
-      "id": 8,
+      "id": "8",
       "text": "New York is the only city in the world that has the largest population.",
       "title": "New York City",
       "likeCount": 15,
@@ -65,7 +65,7 @@
       "user": "Mary L."
     },
     {
-      "id": 9,
+      "id": "9",
       "text": "React is a JavaScript framework for building user interfaces.",
       "title": "React",
       "likeCount": 15,
@@ -73,7 +73,7 @@
       "user": "Kevin S."
     },
     {
-      "id": 10,
+      "id": "10",
       "text": "How much economic growth is the US equity market now pricing in?",
       "title": "Economy",
       "likeCount": 10,
@@ -81,12 +81,28 @@
       "user": "Colleen M."
     },
     {
-      "id": 13,
+      "id": "11",
       "text": "Testing React App",
       "title": "Test",
       "likeCount": 0,
       "hashtags": "#react",
       "user": "Gamze K."
+    },
+    {
+      "id": "12",
+      "text": "tt",
+      "title": "test",
+      "likeCount": 0,
+      "hashtags": "tt",
+      "user": "tt"
+    },
+    {
+      "id": "194c",
+      "text": "ss",
+      "title": "ss",
+      "likeCount": 0,
+      "hashtags": "ss",
+      "user": "ss"
     }
   ]
 }
