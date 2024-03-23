@@ -10,7 +10,7 @@ function TweetsContainer({ tweets, users, search }) {
     flexWrap: "wrap", // Allows cards to wrap to the next line if the container is not wide enough
   };
 
-  if (search === "All" || search === "Most Liked") {
+  if (search === "Most Liked" || search === "All") {
     content = tweets.map((tweet) => (
       <TweetCard
         key={tweet.id}

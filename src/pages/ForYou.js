@@ -14,13 +14,19 @@ function ForYou() {
     setTweets((prevTweets) => [...prevTweets, newTweet]);
   };
 
-  const uniqueUsers = tweets.map((tweet) => tweet.user);
+  const uniqueUsers = tweets.map((tweet) => {
+    if (search === "Users") return true;
 
-  const maxLikes = tweets.filter((tweet) => {
-    return (
-      tweet.likeCount === Math.max(...tweets.map((tweet) => tweet.likeCount))
-    );
+    return tweet.user;
   });
+
+  const filteredTweets =
+    search === "Most Liked"
+      ? tweets.filter(
+          (tweet) =>
+            tweet.likeCount === Math.max(...tweets.map((t) => t.likeCount))
+        )
+      : tweets;
 
   const handleSearchChange = (e) => {
     const selectedOption = e.target.value;
@@ -32,14 +38,14 @@ function ForYou() {
       setUsers([...uniqueUsers]);
     } else if (selectedOption === "Most Liked") {
       setSearch("Most Liked");
-      setTweets(maxLikes);
+      setTweets(filteredTweets);
     } else if (selectedOption === "All") {
       setSearch("All");
-      setTweets(tweets);
+      setTweets([...tweets]);
     }
   };
+  console.log(tweets);
 
-  console.log(users);
   return (
     <div>
       <div className="search-bar">
@@ -53,7 +59,7 @@ function ForYou() {
         </Row>
       </Container>
       <div style={{ marginTop: "120px" }}>
-        <TweetsContainer tweets={tweets} users={users} search={search} />
+        <TweetsContainer tweets={filteredTweets} users={users} search={search} />
       </div>
     </div>
   );
