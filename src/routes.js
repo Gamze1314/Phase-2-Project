@@ -20,7 +20,7 @@ const routes = [
         element: <ForYou />,
       },
       {
-        path: "/settings",
+        path: "/settings/*",
         element: <Settings />,
       },
     ],

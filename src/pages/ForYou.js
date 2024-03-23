@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TweetForm from "../components/TweetForm";
 import SearchBar from "../components/SearchBar";
@@ -44,7 +44,6 @@ function ForYou() {
       setTweets([...tweets]);
     }
   };
-  console.log(tweets);
 
   return (
     <div>
