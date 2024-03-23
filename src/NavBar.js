@@ -11,7 +11,7 @@ function NavBar() {
         <Nav.Link href="/foryou">💬 For You</Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link href="/login">Login</Nav.Link>
+        <Nav.Link href="/settings">Settings</Nav.Link>
       </Nav.Item>
     </Nav>
   );
