@@ -11,6 +11,7 @@ function SearchBar({ onSearchChange , search }) {
         onChange={onSearchChange}
         value={search}
       >
+        <option value="Search">Search</option>
         <option value="All">All</option>
         <option value="Most Liked">Most Liked</option>
         <option value="Users">Who to Follow</option>

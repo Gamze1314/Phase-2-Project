@@ -1,11 +1,17 @@
 import React from "react";
 import TweetCard from "./TweetCard";
-// Render Tweet cards here.
 
 function TweetsContainer({ tweets, users, search }) {
+  let content;
 
-  const cards = tweets.map((tweet) => {
-    return (
+  const containerStyle = {
+    display: "flex",
+    justifyContent: "space-around", // You can adjust this based on your layout preference
+    flexWrap: "wrap", // Allows cards to wrap to the next line if the container is not wide enough
+  };
+
+  if (search === "All" || search === "Most Liked") {
+    content = tweets.map((tweet) => (
       <TweetCard
         key={tweet.id}
         id={tweet.id}
@@ -15,28 +21,23 @@ function TweetsContainer({ tweets, users, search }) {
         user={tweet.user}
         hashtags={tweet.hashtags}
       />
+    ));
+  } else if (search === "Users") {
+    content = (
+      <div>
+        <h3>Suggested Users to Follow</h3>
+        <ul>
+          {users.map((user) => (
+            <li key={user}>{user}</li>
+          ))}
+        </ul>
+      </div>
     );
-  });
+  } else {
+    content = null;
+  }
 
-  const containerStyle = {
-    display: "flex",
-    justifyContent: "space-around", // You can adjust this based on your layout preference
-    flexWrap: "wrap", // Allows cards to wrap to the next line if the container is not wide enough
-  };
-
-  const lis = users.map((user) => <li key={user}>{user}</li>);
-
-  return (
-    <div style={containerStyle}>
-      {search === "Users" ? (
-        <div>
-          <ul>{lis}</ul>
-        </div>
-      ) : (
-        cards
-      )}
-    </div>
-  );
+  return <div style={containerStyle}>{content}</div>;
 }
 
 export default TweetsContainer;
