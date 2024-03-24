@@ -3,8 +3,7 @@ import { Button, Form, Col } from "react-bootstrap";
 import { Container, Row } from "react-bootstrap";
 // import Alert from "react-bootstrap/Alert";
 
-export default function TweetForm({ addTweet, tweets }) {
-  // state to store form data.
+export default function TweetForm({ addTweet }) {
   const [formData, setFormData] = useState({
     text: "",
     title: "",
@@ -16,7 +15,6 @@ export default function TweetForm({ addTweet, tweets }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // POST Request, and update => setState function.
     fetch("http://localhost:3001/tweets", {
       method: "POST",
       headers: {

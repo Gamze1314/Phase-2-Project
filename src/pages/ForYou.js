@@ -53,7 +53,7 @@ function ForYou() {
       <Container>
         <Row>
           <Col sm={5}>
-            <TweetForm addTweet={addTweet} tweets={tweets} />
+            <TweetForm addTweet={addTweet} />
           </Col>
         </Row>
       </Container>
