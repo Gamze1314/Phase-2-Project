@@ -15,8 +15,6 @@ function ForYou() {
   };
 
   const uniqueUsers = tweets.map((tweet) => {
-    if (search === "Users") return true;
-
     return tweet.user;
   });
 
