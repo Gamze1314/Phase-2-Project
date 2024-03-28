@@ -39,7 +39,6 @@ function ForYou() {
       setTweets(filteredTweets);
     } else if (selectedOption === "All") {
       setSearch("All");
-      setTweets([...tweets]);
     }
   };
 
