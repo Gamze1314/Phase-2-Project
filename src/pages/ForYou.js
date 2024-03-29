@@ -28,19 +28,19 @@ function ForYou() {
 
   const handleSearchChange = (e) => {
     const selectedOption = e.target.value;
-    setSearch(selectedOption);
-    console.log(search);
+    setSearch(selectedOption)
 
     if (selectedOption === "Users") {
       setSearch("Users");
       setUsers([...uniqueUsers]);
     } else if (selectedOption === "Most Liked") {
       setSearch("Most Liked");
-      setTweets(filteredTweets);
     } else if (selectedOption === "All") {
       setSearch("All");
     }
   };
+console.log(search)
+  console.log(filteredTweets);
 
   return (
     <div>
@@ -55,7 +55,11 @@ function ForYou() {
         </Row>
       </Container>
       <div style={{ marginTop: "120px" }}>
-        <TweetsContainer tweets={filteredTweets} users={users} search={search} />
+        <TweetsContainer
+          tweets={filteredTweets}
+          users={users}
+          search={search}
+        />
       </div>
     </div>
   );
