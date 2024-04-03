@@ -14,7 +14,6 @@ function TweetsContainer({ tweets, users, search }) {
     content = tweets.map((tweet) => (
       <TweetCard
         key={tweet.id}
-        id={tweet.id}
         title={tweet.title}
         text={tweet.text}
         likeCount={tweet.likeCount}
