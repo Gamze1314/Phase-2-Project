@@ -39,8 +39,8 @@ function ForYou() {
       setSearch("All");
     }
   };
-console.log(search)
-  console.log(filteredTweets);
+// console.log(search)
+//   console.log(filteredTweets);
 
   return (
     <div>

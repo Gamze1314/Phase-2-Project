@@ -1,6 +1,5 @@
 import "./App.css";
 import NavBar from "./NavBar.js";
-// useNavigate is a function that will redirect the user to another page.
 import { Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 

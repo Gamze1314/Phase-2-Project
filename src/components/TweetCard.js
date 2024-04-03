@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Card, ListGroup, Button } from "react-bootstrap";
 
 export default function TweetCard({
-  id,
   title,
   text,
   likeCount,
