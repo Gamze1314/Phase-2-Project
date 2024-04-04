@@ -1,5 +1,8 @@
 # TwitterClone App
 
+![App Demo GIF](./src/demo.gif)
+
+
 This is a simplified Twitter clone web application built using React.js. It allows users to post tweets, view tweets from others, search tweets, and interact with them by liking.
 
 #FEATURES
